@@ -26,7 +26,7 @@ app.get('/chat', (req, res) => {
 });
 
 // Bodyparser
-app.use(express.urlencoded);
+app.use(express.urlencoded({ extended: false }));
 
 
 
